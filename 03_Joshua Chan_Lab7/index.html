@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create and validate web forms</title>
+        <link href="formstyle.css" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+        <h2>IT Skills & Knowledge</h2>
+
+        <form name= "UserInfo" method = "post" id ="UserInfo" action = "mailto:Joshua_Chan@hotmail.com">
+
+            <fieldset><legend>Personal Information</legend><p class="labels">Name:<input type = "text" name = "Name" id = "Name" size = "30" maxlength= "50"/></p>
+
+            <p class="labels">Password:<input type = "password" name = "password" id = "Password" size = "30" maxlength= "50"/></p>
+
+            <p class="labels">Email Address:<input type = "text" name = "Email_address" id = "Email_address" size = "50" maxlength= "60"/></p>
+
+            <p class="labels"><input type = "radio" name = "Gender" value = "male" id = "Gender_0">Male</label>
+            <label><input type = "radio" name = "Gender" value = "female"id = "Gender_1">Female</label></p>
+
+            <p>IT Skills:</p>
+            <p class="labels">
+                <label><input type = "checkbox"name = "ITSkills[]" value "Visual Basic Programming"id =
+                "ITSkills_0">Visual Basic Programming</label>
+                <br>
+                <label><input type = "checkbox"name = "ITSkills[]" value "Java Basic Programming"id ="ITSkills_1">Java 
+                Programming</label>
+                <br>
+                <label><input type = "checkbox"name = "ITSkills[]" value "Computer Networking"id =
+                "ITSkills_2">Computer Networking</label>
+                <br>
+                <label><input type = "checkbox"name = "ITSkills[]" value "Webpage Page Design"id = "ITSkills_3">Web 
+                Page Design</label>
+                <br>
+            </p>
+
+            <p>I'm interested in the following IT skills:</p>
+            <p>
+                <select class="labels" name="Interested" size = "3" multiple id="Interested">
+                    <option value="Selection" selected>Select one or more</option>
+                    <option value="PHP" selected>PHP programming</option>
+                    <option value="C#" selected>C# Programming</option>
+                    <option value="C++" selected>C++ Programming</option>
+                    <option value="Perl" selected>Perl Programming</option>
+                </select>
+            </p>
+
+            <p>Please enter your comments:</p>
+            <textarea class="labels" name="Comments" cols="40" rows="5" WRAP></textarea>
+            <br>
+
+            <p>File to upload: <input name="Upload file" type="file" size="30" maxlength="40"></p>
+
+            <input name="Submit" type="submit" value="Submit">
+            <input name="Reset" type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>

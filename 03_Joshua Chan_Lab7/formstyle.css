@@ -1,0 +1,20 @@
+input{
+    background-color: pink;
+    color: blue;
+}
+
+radio{
+    background-color: pink;
+}
+
+option{
+    color: blue;
+    background-color: white;
+    font-weight: bold;
+}
+
+.labels{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: blue;
+}

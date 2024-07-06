@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Our Feedback Form</title> 
+<script src="validateFeedback.js"></script> 
+<script> 
+function resetForm(){ 
+document.getElementById("feedbackForm").reset(); 
+} 
+</script> 
+<style> 
+.red { 
+ color: red; 
+ } 
+</style> 
+</head> 
+<body> 
+<h1>Feedback Form</h1> 
+<form action="ThankYou.html" id="feedbackForm" 
+name="feedbackForm" onsubmit="return(validateFeedback());" 
+method="POST"> 
+<!--Start of Feedback form--> 
+<fieldset> 
+<legend>Personal Information</legend> 
+<label for="lblfname"><span>* </span>First Name</label><br> 
+<input type="text" name="txtfName" id="txtfName" minlength="2" 
+maxlength="30" placeholder="first name"> 
+<span class="red" id="errfName"><br>Pls fill in the 
+Information</span><br><br> 
+<label for="lbllname"><span>* </span>Last Name</label><br> 
+<input type="text" name="txtlName" id="txtlName" 
+minlength="2"maxlength="30" placeholder="last name"> 
+<span class="red" id="errlName"><br>Pls fill in the 
+Information</span><br><br> 
+<label for="lblEmail"><span>* </span>Email Address</label><br>
+<input type="text" name="txtEmail" id="txtEmail" placeholder="email"> 
+<span class="red" id="errEmail"><br>Pls fill in the 
+Information</span><br><br> 
+<label for="lblmobile"><span>* </span>Mobile Number</label><br> 
+<input type="text" name="txtMobile" id="txtMobile" placeholder="mobile 
+number"> 
+<span class="red" id="errMobile"><br>Pls fill in the 
+Information</span><br><br> 
+<label for="lblGender"><span>* </span>Gender</label><br> 
+<label> 
+<input type="radio" name="gender" id="rbMale">Male 
+</label> 
+<label> 
+<input type="radio" name="gender" id="rbFemale">Female 
+</label> 
+<span class="red" id="errGender"><br>Pls fill in the 
+Information</span><br><br> 
+</fieldset> 
+<!-- Comments --> 
+<p> 
+<p><span> * </span>Comments (required, please limit to 300 
+characters):</p> 
+<div class="container"> 
+<textarea id="txtArea" cols=48 rows="6" maxlength="300" 
+placeholder="Your Comments"></textarea><br> 
+</p> 
+<span class="red" id="errArea">Pls fill in the Information</span> 
+</div><br> 
+<!-- End Comments --> 
+<button>Submit</button> 
+<button onclick="resetForm()">Reset</button> 
+<br> 
+</form> 
+<!--End of Feedback form--> 
+</body> 
+</html>

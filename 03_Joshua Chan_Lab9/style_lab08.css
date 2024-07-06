@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+p{color:#666}
+h1{color:#00F}
+h2{color:#F00}
+/* Common to both tags */
+h1, h2, p{font-family:Georgia, 'Times New Roman', Times, serif}
+/* Using class and ID */
+#main{border: #666 solid 2px;}
+.image{width:200px;}
+/* Using compund selectors */
+div#main p{margin:10px;}
+/* For navigation menu */
+#navigation{border:#666 solid 2px;}
+#navigation ul{list-style: none; overflow: hidden;}
+#navigation li{float: left; text-align: center;}
+#navigation a{text-decoration: none; display: block; width: 150px;}
+#navigation a:hover{background-color: #999;}

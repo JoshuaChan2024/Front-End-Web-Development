@@ -1,0 +1,15 @@
+.serif
+{
+    font-family:"Times New Roman",Georgia,serif;
+    font-style:normal;
+}
+.sansserif
+{
+    font-family:Arial,"Century Gothic",sans-serif;
+    font-style:italic;
+}
+.monospace
+{
+    font-family:"Courier New",Monaco,monospace;
+    font-style:oblique;
+}

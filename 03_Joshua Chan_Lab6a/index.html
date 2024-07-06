@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formidable Forms with HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Hands-on with Web Forms</h1>
+  </header>
+  <div class="form">
+    <form id="userform" action="acknowledge.html" method="get">
+        <p class="caption">
+          <label for="username">Name</label>
+        </p>
+        <p>
+          <input type="text" id="username" name="username">
+        </p>
+        <p class="caption">
+            <label for="userpassword">Password</label>
+        </p>
+        <p>
+            <input type="password" id="userpassword" name="userpassword">
+        </p>
+        <fieldset>
+            <legend>Gender</legend>
+          
+            <label for="male">Male</label> 
+            <input type="radio" id="male" name="gender" value="male">
+          
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+          
+        </fieldset>
+        <p class="caption">
+            <label for="resstatus">Residential Status</label>
+        </p>
+        <p>  
+            <select id="resstatus" name="resstatus">      
+              <option value="Citizen">Citizen</option>
+              <option value="PR">Permanent Resident</option>
+              <option value="Foreigner">Foreigner</option>
+            </select> 
+        </p>
+        <p class="caption">
+            <label for="aboutme">About Me</label>
+        </p>
+        <p>
+            <textarea id="aboutme" name="aboutme" rows="10" cols="100"></textarea>
+        </p>
+        <p class="caption">
+            <label for="useremail">Email</label>
+        </p>
+        <p>
+            <input type="email" id="useremail" name="useremail">
+        </p>
+        <p class="caption">
+            <label for="weblink">Web Link</label>
+        </p>
+        <p>
+            <input type="url" id="weblink" name="weblink">
+        </p>
+        <p class="caption">
+            <label for="dateofbirth">Date of Birth</label>
+        </p>
+        <p>
+            <input type="date" id="dateofbirth" name="dateofbirth">
+        </p>
+        <p class="caption">
+            <label for="favoritecolor">Favorite Color</label>
+        </p>
+        <p>
+            <input type="color" id="favoritecolor" name="favoritecolor">
+        </p>
+        <p class="caption">
+            <label for="hobbies">Hobbies</label>
+        </p>
+        <p>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="coding">Coding<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="reading">Reading<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="swimming">Swimming<br> 
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="jogging">Jogging<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="eating">Eating<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="others">Others<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="coding">Coding<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="reading">Reading<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="coding">Gaming<br>
+            <input type="checkbox" class="hobbies" name="hobbies[]" value="reading">Music<br> 
+        </p>
+        <p class="caption">
+            <label for="zodiac">Zodiac</label>
+          </p>
+          <input list="zodiac" name="zodiac">
+          <datalist id="zodiac">
+            <option value="Aries">
+            <option value="Taurus">
+            <option value="Gemini">
+            <option value="Cancer">
+            <option value="Leo">
+            <option value="Virgo">
+            <option value="Libra">
+            <option value="Scorpio">
+            <option value="Sagittarius">
+            <option value="Capricorn">
+            <option value="Aquarius">
+            <option value="Pisces">
+          </datalist>
+        <p class="caption">
+            <label for="portrait">Portrait</label>
+        </p>
+        <p>
+            <input type="file" id="portrait" name="portrait">
+        </p>
+        <input type="reset" class="bottom" value="Reset">
+        <p>
+          <input type="submit" class="bottom" id="usersubmit" name="usersubmit" value="Sign up">
+        </p>
+      </form>
+  </div>
+</div>
+</body>
+</html>

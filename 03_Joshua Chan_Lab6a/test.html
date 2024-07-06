@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form onsubmit="alert(document.getElementById('name').value);return false;">
+        Name: <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('password').value);return false;">
+        Password: <input type="password"id="password" name="password">
+        <input type="submit" value="Submit">
+    </form>
+    <input type="radio" id="male" name="gender" value="male">Male
+    <input type="radio" id="female" name="gender" value="female">Female
+    <input type="checkbox" id="hobbies" name="hobbies" value="Coding">Coding
+    Portrait: <input type="file" id="portrait" name="portrait">
+    <form onsubmit="alert('Welcome to PeterLeowBlog.com!');return false;">
+        <input type="submit" name="submit" id="submit" value="Sign up">
+    </form>
+    <input type="reset" value="Reset">
+    <input type="button" value="Click Me" onclick="alert('Welcome to PeterLeowBlog.com!')">
+    <button type="button" onclick="alert('Welcome to PeterLeowBlog.com!')">Click Me</button>
+    <form onsubmit="alert('Welcome to PeterLeowBlog.com!');return false;">
+        <input type="image" src="https://en.gravatar.com/userimage/89030985/4e416e4d0b5f28768d4ad747299a099b.jpeg" name="img" alt="Workspace">
+    </form>
+    <input type="hidden" name="secret" id="secret" value="I love PeterLeow's Code Blog!">
+    <input type="button" value="I have a secret" onclick="alert(getElementById('secret').value)">
+    <form onsubmit="alert(document.getElementById('email').value);return false;">
+        Email: <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('dateofbirth').value);return false;">
+        Date of Birth: <input type="date" id="dateofbirth" name="dateofbirth">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('favoritecolor').value);return false;">
+        Favorite Color: <input type="color" id="favoritecolor" name="favoritecolor">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('weblink').value);return false;">
+        My Home Page: <input type="url" id="weblink" name="weblink">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('capacity').value);return false;">
+        Capacity: <input type="number" id="capacity" name="capacity" min="1" max="9" step="2">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('rate').value);return false;">
+        Rate: 1 <input type="range" id="rate" name="rate" min="1" max="5"> 5
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="window.open('http://lmgtfy.com/?q='+document.getElementById('askgoogle').value);return false;">
+        Ask Google: <input type="search" id="askgoogle" name="askgoogle">
+        <input type="submit" value="Submit">
+    </form>
+    <form onsubmit="alert(document.getElementById('mobile').value);return false;">
+        Mobile: <input type="tel" id="mobile" name="mobile">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
